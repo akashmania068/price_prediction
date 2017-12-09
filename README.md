@@ -6,9 +6,11 @@ Get Dataset from : https://www.kaggle.com/c/mercari-price-suggestion-challenge/
 
 Description :-
 
-In this competition, you will predict the sale price of a listing based on information a user provides for this listing.
-This is a Kernels-only competition, the files in this Data section are downloadable just for your reference in
-Stage 1. Stage 2 files will only be available in Kernels and not available for download here.
+In this competition, Mercari challenges to build an algorithm that automatically suggests the right product prices.
+We’ll be provided user-inputted text descriptions of their products, including details like product category name,
+brand name, and item condition.
+
+In this competition, we will predict the sale price of a listing based on information a user provides for this listing.
 
 
 Data fields :-
