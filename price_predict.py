@@ -1,15 +1,13 @@
 import pandas as pd
+from sklearn.preprocessing import Imputer
 
-## Checking time taken to read the dataset
-# import timeit
-#
-# time = timeit.timeit(stmt="""pd.read_excel("Dataset/train.xlsx", header=0, usecols=[0, 2, 3, 4, 5, 6, 7])""",
-#                      setup="import pandas as pd",
-#                      number=2)
-# print(time) # takes approx. 110 seconds to read the dataset
+train_data = pd.read_pickle("train.pkl")
 
-dataset = pd.read_excel(io="Dataset/train.xlsx", header=0)
+# print(train_data.isnull().sum()) # to get the no. of missing values in each columns
 
-x_train = dataset.iloc[:, dataset.columns != 'price'].values
-y_train = dataset.iloc[:, 5].values
+# Taking care of the missing values
+
+
+x_train = train_data.iloc[:, train_data.columns != 'price'].values
+y_train = train_data.iloc[:, 5].values
 
