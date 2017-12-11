@@ -12,3 +12,5 @@ dataset = pd.read_excel(io="Dataset/train.xlsx", header=0)
 
 x_train = dataset.iloc[:, dataset.columns != 'price'].values
 y_train = dataset.iloc[:, 5].values
+
+print('hello world')
